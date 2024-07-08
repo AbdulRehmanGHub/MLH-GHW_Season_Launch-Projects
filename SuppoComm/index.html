@@ -1,0 +1,130 @@
+<!-- I want to create a small but special project in html, css and js. give me code
+        Create a project or application that helps support your local community.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Support Your Local Community</h1>
+
+        <!-- create a button that will toggle the background color of the page when the user clicks on it -->
+        <button onclick="toggleBackgroundColor()">Toggle Background Color</button>
+
+
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section>
+            <h2>What is this project about?</h2>
+            <p>This project is about supporting your local community. It is about helping the people around you. It is about making a difference in the lives of those who need it the most.</p>
+        </section>
+
+        <section>
+            <h2>How can you help?</h2>
+            <p>There are many ways you can help your local community. You can volunteer your time, donate money or goods, or simply spread the word about the good work that is being done in your area.</p>
+        </section>
+
+        <section>
+            <h2>Why is it important?</h2>
+            <p>Supporting your local community is important because it helps to build a stronger, more connected society. It helps to create a sense of belonging and pride in the place where you live. It also helps to improve the lives of those who are less fortunate than you.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2021 Support Your Local Community</p>
+    </footer>
+
+    <!-- styling -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            margin: 0 0 1em 0;
+        }
+
+        p {
+            margin: 0 0 1em 0;
+        }
+
+    </style>
+
+    <!-- js -->
+
+    <script>
+        // give logics
+
+        // create a function that will display a message when the page loads
+        function displayMessage() {
+            alert('Welcome to Support Your Local Community!');
+        }
+
+        // call the function when the page loads
+        window.onload = displayMessage;
+        
+        // create a function that will display a message when the user clicks on the header
+        function displayHeaderMessage() {
+            alert('Thank you for supporting your local community!');
+        }
+
+        // toggle button backgorund color of the page when the user clicks on it
+        function toggleBackgroundColor() {
+            var body = document.querySelector('body');
+            var button = document.querySelector('button');
+
+            if (body.style.backgroundColor === 'white') {
+                body.style.backgroundColor = 'lightblue';
+                // button.style.backgroundColor = 'blue';
+            } else {
+                body.style.backgroundColor = 'white';
+                // button.style.backgroundColor = 'red';
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
